@@ -17,3 +17,4 @@ jobs:
           server: 108.167.151.89
           username: slayth33
           password: 1.@slaython@dev
+          server-dir: portfolio.slaython.com/
