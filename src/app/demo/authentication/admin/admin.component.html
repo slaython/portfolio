@@ -1,0 +1,35 @@
+<div class="auth-main">
+  <div class="auth-wrapper v3">
+    <div class="auth-form">
+      <div class="auth-header">
+        <a href="javascript:"><img src="assets/images/logo-dark.svg" alt="logo" /></a>
+      </div>
+      <div class="card my-5">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-end mb-4">
+            <h3 class="mb-0"><b>Bem vindo Slaython</b></h3>
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label" for="email">Login</label>
+            <input type="email" class="form-control" id="email" placeholder="Insira seu usuário" [(ngModel)]="email" />
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label" for="password">Senha</label>
+            <input type="password" class="form-control" id="password" placeholder="Insira sua senha" [(ngModel)]="password" />
+          </div>
+          <div class="d-grid mt-4">
+            <button type="button" class="btn btn-primary" (click)="login()">Entrar</button>
+          </div>
+        </div>
+      </div>
+      <div class="auth-footer row">
+        <div class="col my-1">
+          <p class="m-0">
+            Copyright ©
+            <a href="https://codedthemes.com/" target="_blank">G. Slaython 2024</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

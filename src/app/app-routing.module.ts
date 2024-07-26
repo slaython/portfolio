@@ -13,7 +13,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/dashboard/default',
+        redirectTo: '/admin',
         pathMatch: 'full'
       },
       {
@@ -45,6 +45,9 @@ const routes: Routes = [
       {
         path: 'register',
         loadComponent: () => import('./demo/authentication/register/register.component')
+      }, {
+        path: 'admin',
+        loadComponent: () => import('./demo/authentication/admin/admin.component')
       }
     ]
   }
