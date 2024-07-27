@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
   // PREPARA PARA AS REQUISIÇÕES DE LOGIN
-  private loginUrl = 'http://seu-api-endpoint/login';
+  private loginUrl = 'http://127.0.0.1:8000/api/admin/login';
 
   constructor(private http: HttpClient) {}
 
