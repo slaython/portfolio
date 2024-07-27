@@ -2,7 +2,7 @@
   <div class="auth-wrapper v3">
     <div class="auth-form">
       <div class="auth-header">
-        <a href="javascript:"><img src="assets/images/logo-dark.svg" alt="logo" /></a>
+        <a href="javascript:"><img style="width: 150px;" src="assets/images/logoTudoSlaython.png" alt="logo" /></a>
       </div>
       <div class="card my-5">
         <div class="card-body">
@@ -18,7 +18,7 @@
             <input type="password" class="form-control" id="password" placeholder="Insira sua senha" [(ngModel)]="password" />
           </div>
           <div class="d-grid mt-4">
-            <button type="button" class="btn btn-primary" (click)="login()">Entrar</button>
+            <button type="button" class="btn btn-dark" (click)="login()">Entrar</button>
           </div>
         </div>
       </div>
@@ -33,3 +33,4 @@
     </div>
   </div>
 </div>
+<app-loading *ngIf="loading"></app-loading>
