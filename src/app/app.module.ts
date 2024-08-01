@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './theme/shared/shared.module';
 import { AdminComponent } from './theme/layouts/admin-layout/admin-layout.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +22,8 @@ import { AdminComponent } from './theme/layouts/admin-layout/admin-layout.compon
     AdminComponent,
     HttpClientModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    ToastrModule.forRoot()
   ],
   bootstrap: [AppComponent]
 })

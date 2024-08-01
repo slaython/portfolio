@@ -16,3 +16,7 @@ use App\Http\Controllers\AdminLoginController;
 */
 
 Route::post('admin/login', [AdminLoginController::class, 'AdminLogin']);
+
+Route::middleware(['auth:sanctum', 'token.expiry'])->group(function () {
+    // rotas protegidas
+});

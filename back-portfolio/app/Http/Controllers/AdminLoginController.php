@@ -34,11 +34,15 @@ class AdminLoginController extends Controller
                 'status' => 401
             ]);
         }
+        // GERA O TOKEN
+        $token = $usuario->createToken('admin-token')->plainTextToken;
         // REALIZA O LOGIN
         return response()->json([
             'usuarios' => $usuario,
             // ENVIA STATUS
-            'status' => 200
+            'status' => 200,
+            'message' => 'Login realizado com sucesso',
+            'token' => $token
         ]);
     }
 }

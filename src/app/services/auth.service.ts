@@ -11,7 +11,12 @@ export class AuthService {
 
   constructor(private http: HttpClient) {}
 
+  // REQUISIÇÃO DE LOGIN
   login(email: string, password: string): Observable<any> {
     return this.http.post(this.loginUrl, { email, password });
+  }
+  // SALVA OS DADOS NO USUARIO NO LOCALSTORAGE
+  setUser(user: any) {
+    localStorage.setItem('user', JSON.stringify(user));
   }
 }
